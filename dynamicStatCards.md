@@ -26,15 +26,13 @@ In my case, I got an endpoint that had a pattern which I found to be optimal for
 }
 ```
 
-This pattern allows us to easily:
+This pattern allows us to easily do the following and have the front-end recognize these changes:
 
 - Add new stat objects
 - Add new stats to existing stat objects
 - Remove stats from existing stat objects
 - Remove stat objects
 - Modify stats e.g. key names
-
-all while keeping our front-end dynamic.
 
 Takeaway: Backend response pattern should be **recognizible**. The front-end should be able to easily parse, without code modification, the response even if it applies the above modifications.
 
@@ -124,7 +122,7 @@ Now you might think what's wrong with this approach. Let's go over each issue.
     Here, we're again assuming that:
 
       - a key `statCardHeading1` is going to exist in the response.
-      - keys `'stat1', 'stat2', 'stat3'` are going to exist in the `statCardHeading1` response
+      - keys `'stat1', 'stat2', 'stat3'` are going to exist in the `statCardHeading1` object
 
 ## Dynamic Design Pattern
 

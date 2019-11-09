@@ -121,7 +121,10 @@ Now you might think what's wrong with this approach. Let's go over each issue.
     this.ourHeading1Data.push(sampleResponse.statCardHeading1.stat3);
     ```
 
-    Here, we're again assuming that a key `statCardHeading1` is going to exist in the response.
+    Here, we're again assuming that:
+
+      - a key `statCardHeading1` is going to exist in the response.
+      - keys `'stat1', 'stat2', 'stat3'` are going to exist in the `statCardHeading1` response
 
 ## Dynamic Design Pattern
 

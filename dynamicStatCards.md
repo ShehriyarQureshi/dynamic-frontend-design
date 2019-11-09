@@ -379,4 +379,5 @@ HTML
 </canvas>
 ```
 
-Now even if the backend adds more stat objects, front-end will be able to parse the response and show those stats in the stat card.
+Now even if the backend adds more stat objects, front-end will be able to parse the response and show those stats in the stat card
+**without code modification in either HTML or TS code.**

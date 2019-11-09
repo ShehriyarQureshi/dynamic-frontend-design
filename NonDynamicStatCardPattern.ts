@@ -1,7 +1,7 @@
 class NonDynamicStatCardPattern {
 
     public ourHeading1Data: Array<number> = [];
-    public ourHeading1Labels: Array<string> = ['StatCardHeading1', 'statCardHeading2', 'statCardHeading3'];
+    public ourHeading1Labels: Array<string> = ['stat1', 'stat2', 'stat3'];
 
     constructor() {
         this.getStats();

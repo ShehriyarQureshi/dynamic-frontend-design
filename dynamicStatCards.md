@@ -1,4 +1,4 @@
-# Statistic Cards
+# Statistics Cards
 
 We want to display some stat cards like below.
 

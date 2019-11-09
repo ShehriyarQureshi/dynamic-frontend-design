@@ -10,4 +10,4 @@ The examples provided are of applications that I've actually worked on. So feel 
 
 ## Contents
 
-1. ## [Statistic Cards](./dynamicStatCards.md#StatisticCards)
+1. ## [Statistics Cards](./dynamicStatCards.md#StatisticsCards)

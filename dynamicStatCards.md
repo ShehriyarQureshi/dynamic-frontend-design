@@ -289,18 +289,6 @@ private getStats(): void {
     this.parsedStatCardHeading3.DATA.push(sampleResponse.statCardHeading3.stat2);
     this.parsedStatCardHeading3.DATA.push(sampleResponse.statCardHeading3.stat3);
 
-    // or you might loop over the inner objects and push the values
-
-    for (const iterator in sampleResponse.statCardHeading1) {
-        this.parsedStats.statCardHeading1.DATA.push(sampleResponse[iterator]);
-    }
-    for (const iterator in sampleResponse.statCardHeading2) {
-        this.parsedStats.statCardHeading2.DATA.push(sampleResponse[iterator]);
-    }
-    for (const iterator in sampleResponse.statCardHeading3) {
-        this.parsedStats.statCardHeading3.DATA.push(sampleResponse[iterator]);
-    }
-
 }
 ```
 

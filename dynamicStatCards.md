@@ -64,7 +64,7 @@ TypeScript
 class NonDynamicStatCardPattern {
 
     public ourHeading1Data: Array<number> = [];
-    public ourHeading1Labels: Array<string> = ['StatCardHeading1', 'statCardHeading2', 'statCardHeading3'];
+    public ourHeading1Labels: Array<string> = ['stat1', 'stat2', 'stat3'];
 
     constructor() {
         this.getStats();
@@ -105,10 +105,10 @@ Now you might think what's wrong with this approach. Let's go over each issue.
 1. ### Hard-coding in Labels
 
     ```typescript
-        public ourHeading1Labels: Array<string> = ['StatCardHeading1'];
+        public ourHeading1Labels: Array<string> = ['stat1', 'stat2', 'stat3'];
     ```
 
-    Here, we're already hard coding what the labels are supposed to be i.e. ```['StatCardHeading1']```.
+    Here, we're already hard coding what the labels are supposed to be i.e. ```['stat1', 'stat2', 'stat3']```.
     This may seem like a good idea because you can set the label on front-end to whatever you want to be, but that flexibility removes the dynamic ability.
 
     If the database gets updated and the backend now returns a new stat object, **we'll have to modify the front-end and edit this line to add the new stat label.**
